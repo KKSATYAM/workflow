@@ -1,0 +1,13 @@
+
+name: Linux Commands
+on: [push]
+
+jobs:
+    runs-linux-command:
+        runs-on: ubuntu-22.04
+        steps:
+          - name: Echo
+            run: echo "H"
+          - name: Echo
+            run: echo "Run Linux command"
+        
