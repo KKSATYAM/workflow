@@ -13,3 +13,19 @@ jobs:
           who-to-greet: Satyam
       - name: print time of message print
         run: echo "${{steps.greet.outputs.time}}"
+      - name: List Files
+        run: |
+          pwd
+          ls -a
+      - name: Checkout to updated commit
+        uses: actions/checkout@v1
+      - name: List Files after Checkout
+        run: |
+          pwd
+          ls -a
+      - name: Global Variables
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_WORKSPACE
+          echo $GITHUB_REPOSITORY
+             
