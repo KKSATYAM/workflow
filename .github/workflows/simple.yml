@@ -4,6 +4,7 @@ on: [push]
 jobs:
   runs-linux-commads:
     runs-on: ubuntu-latest
+    needs: ["runs-windows-command"]
     steps:
       - name: Python on shell
         run: |
