@@ -10,7 +10,7 @@ jobs:
         id: greet
         uses: actions/hello-world-javascript-action@v1.1
         with:
-          who-to-greet: Satyam
+          who-to-greet: Satyam Kumar
       - name: print time of message print
         run: echo "${{steps.greet.outputs.time}}"
       - name: List Files
@@ -28,4 +28,4 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_WORKSPACE
           echo $GITHUB_REPOSITORY
-             
+            
