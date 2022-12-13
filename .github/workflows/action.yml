@@ -1,5 +1,5 @@
-name: XXX Workflow
-on: [push]
+name: Workflow
+on: [push, pull_request]
 
 
 jobs:
