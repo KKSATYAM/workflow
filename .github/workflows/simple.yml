@@ -7,7 +7,10 @@ jobs:
     needs: ["runs-windows-command"]
     steps:
       - name: Echo a String Message
-        run: echo "Echoing String Message"
+        run: |
+          echo "Echoing String Message"
+          install pip
+          print("hello python")
 
   runs-windows-command:
     runs-on: windows-latest
