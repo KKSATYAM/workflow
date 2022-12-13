@@ -8,8 +8,7 @@ jobs:
     steps:
       - name: Python on shell
         run: |
-          import platform
-          print(platform.processor())
+          print("From Python Shell")
           shell: python
       - name: Echo a String Message
         run: echo "Echoing String Message"
