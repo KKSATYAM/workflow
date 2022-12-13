@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: action workflow example
-        id: actions
+        id: greet
         uses: actions/hello-world-javascript-action@v1.1
         with:
           who-to-greet: Satyam
       - name: print time of message print
-        run: echo "${{steps.actions.output.time}}""
+        run: echo "${{steps.greet.output.time}}"
