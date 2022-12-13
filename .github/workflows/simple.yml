@@ -9,7 +9,7 @@ jobs:
         run: |
           import platform
           print(platform.processor())
-          shell: Python
+          shell: python
       - name: Echo a String Message
         run: echo "Echoing String Message"
 
