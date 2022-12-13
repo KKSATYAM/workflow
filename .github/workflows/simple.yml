@@ -6,10 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: ["runs-windows-command"]
     steps:
-      - name: Python on shell
-        run: |
-          print("From Python Shell")
-          shell: python
       - name: Echo a String Message
         run: echo "Echoing String Message"
 
