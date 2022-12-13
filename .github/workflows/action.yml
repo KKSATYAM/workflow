@@ -1,8 +1,10 @@
 name: Workflow
 on:
-  push:
+  # push:
   pull_request:
-    types: ["closed","opened","assigned","reopened"]  
+    types:  ["closed","opened","assigned","reopened"]
+  schedule:
+    - cron: "0/5 * * * * "
 
 
 
