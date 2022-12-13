@@ -8,7 +8,7 @@ jobs:
       - name: Python on shell
         run: |
           import platform
-          print(planform.processor())
+          print(platform.processor())
           shell: Python
       - name: Echo a String Message
         run: echo "Echoing String Message"
