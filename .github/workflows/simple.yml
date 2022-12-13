@@ -1,0 +1,25 @@
+name: Testing Workflow Logic
+on: [push]
+
+jobs:
+  runs-linux-commads:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Python on shell
+        run: |
+          import platform
+          print(planform.processor())
+          shell: Python
+      - name: Echo a String Message
+        run: echo "Echoing String Message"
+
+  runs-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: Get Location
+        run: Get-Location
+      - name: Run command on Bash shell in windows-latest
+        run: pwd
+        shell: bash
+
+  
